@@ -857,6 +857,26 @@ footer .container {
   fill: var(--main-background-color);
 }
 
+.bottom-part-signing {
+  margin-left: 93px;
+}
+
+.signing-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-background-color);
+}
+
+.signing-form-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /*=====BACKDROP======*/
 
 .backdrop {
