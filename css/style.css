@@ -950,6 +950,7 @@ footer .container {
   border-radius: 4px;
   background-color: #ffffff;
   /*transform: scale();*/
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -976,4 +977,30 @@ footer .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.modal-form-input {
+  width: 100%;
+  width: 448px;
+  height: 40px;
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  padding-left: 42px;
 }
