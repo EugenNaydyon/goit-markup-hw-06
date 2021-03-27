@@ -996,6 +996,10 @@ footer .container {
   color: #212121;
 }
 
+.modal-form-label {
+  position: relative;
+}
+
 .modal-form-input {
   width: 100%;
   width: 448px;
@@ -1005,7 +1009,12 @@ footer .container {
   padding-left: 42px;
 }
 
-.modal-icon-name {
+.modal-icon-name,
+.modal-icon-tel,
+.modal-icon-email {
   width: 18px;
   height: 18px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
