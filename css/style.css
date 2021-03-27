@@ -1004,3 +1004,8 @@ footer .container {
   border-radius: 4px;
   padding-left: 42px;
 }
+
+.modal-icon-name {
+  width: 18px;
+  height: 18px;
+}
