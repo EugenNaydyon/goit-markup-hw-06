@@ -884,7 +884,23 @@ footer .container {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  color: #ffffff;
+}
+
+.signing-form-email::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.signing-form-email:focus {
+  outline: none;
+  border-color: #2196f3;
 }
 
 .signing-title {
@@ -902,6 +918,8 @@ footer .container {
   background: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
+  padding: 0px;
   width: 200px;
   height: 50px;
   font-family: Roboto;
@@ -909,22 +927,34 @@ footer .container {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.8;
-
+  /*padding-right: 62px;*/
+  /*padding: 0px;
   align-items: center;
-  text-align: center;
+  text-align: center;*/
   letter-spacing: 0.06em;
 
   color: var(--main-background-color);
-  /*padding: 10px 0px 10px 29px;*/
 }
 
 .signing-form-box {
+  position: relative;
   padding: 0px;
   margin: 0px;
 }
 
 .signing-form-icon {
-  margin-left: 10px;
+  display: inline-block;
+  /*position: absolute;
+  bottom: 13px;
+  right: 28px;*/
+}
+
+.signing-text {
+  display: flex;
+  margin-left: 28px;
+  margin-right: 29px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*=====BACKDROP======*/
@@ -992,21 +1022,35 @@ footer .container {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-
+  margin-bottom: 12px;
   color: #212121;
 }
 
-.modal-form-label {
+.modal-form-span {
   position: relative;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .modal-form-input {
   width: 100%;
-  width: 448px;
   height: 40px;
-  border: 1px solid #2196f3;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.modal-form-input:focus + .modal-icon-email,
+.modal-form-input:focus + .modal-icon-name,
+.modal-form-input:focus + .modal-icon-tel {
+  fill: #2196f3;
 }
 
 .modal-icon-name,
@@ -1015,6 +1059,45 @@ footer .container {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  color: #212121;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
+}
+
+.modal-form-message::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.lable-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
